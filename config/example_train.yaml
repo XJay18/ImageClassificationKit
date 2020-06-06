@@ -1,0 +1,30 @@
+model:
+  name: ResNetMini
+  num_classes: 10
+  init: kaiming
+data:
+  train: WrappedCIFAR10
+  val: WrappedCIFAR10
+  train_batch_size: 128
+  val_batch_size: 128
+  path: /path/to/data
+config:
+  resume: False
+  resume_best: False
+  id: xxxxx
+  device: 0
+  log_steps: 100
+  val_steps: 500
+  num_steps: 64000
+  optimizer:
+    name: SGD
+    lr: 0.1
+    momentum: 0.9
+    weight_decay: 0.0001
+    nesterov: True
+  scheduler:
+    name: MultiStepLR
+    milestones: [83, 124]
+    gamma: 0.1
+  debug: False
+

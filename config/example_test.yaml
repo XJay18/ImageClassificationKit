@@ -1,0 +1,12 @@
+config:
+  device: 0
+  id: xxxxx
+  ckpt_fold: runs
+model:
+  name: ResNetMini
+  num_classes: 10
+  init: kaiming
+data:
+  test: WrappedCIFAR10
+  batch_size: 100
+  path: /path/to/data
