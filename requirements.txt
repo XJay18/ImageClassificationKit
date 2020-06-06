@@ -68,8 +68,6 @@ six=1.12.0=py36_0
 sqlite=3.29.0=h7b6447c_0
 tensorboard=1.9.0=py36_0
 tensorboardx=2.0=pypi_0
-tensorflow=1.9.0=py36_0
-tensorflow-gpu=1.9.0=pypi_0
 termcolor=1.1.0=pypi_0
 thop=0.0.31-2001170342=pypi_0
 tk=8.6.8=hbc83047_0
